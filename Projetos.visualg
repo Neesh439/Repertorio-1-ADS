@@ -1,0 +1,21 @@
+algoritmo "processo"
+
+var
+    idade:inteiro
+    projetos:inteiro
+
+inicio
+    escreval ("Digite sua idade")
+    leia(idade)
+
+    escreval ("Quantos projetos?")
+    leia(projetos)
+
+    se idade >= 18 e projetos >= 5 entao
+            escreval ("Vc foi aprovado")
+    senao
+      escreval ("nn foi dessa vez")
+
+fimse
+
+fimalgoritmo

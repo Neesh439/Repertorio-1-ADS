@@ -1,0 +1,22 @@
+algoritmo "CDB"
+
+var
+    valor:real
+    meses:inteiro
+    taxa:real
+
+
+inicio
+      escreval("Digite o valor")
+      leia(valor)
+
+      escreva("Digite os meses")
+      leia(meses)
+
+ se meses > 12 entao
+    taxa <- 0.12
+  senao
+      taxa <- 0.08
+fimse
+escreval ("A taxa aplicada será:", taxa *100, "% ao ano")
+fimalgoritmo

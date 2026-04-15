@@ -1,0 +1,28 @@
+algoritmo "PIX"
+
+var
+    valor: real
+    saldo: real
+    cheque: real
+
+inicio
+    escreval("Digite o valor da transferencia:")
+    leia(valor)
+
+    escreval("Digite o saldo atual:")
+    leia(saldo)
+
+    se saldo >= valor entao
+        escreval("Transacao realizada")
+    senao
+        escreval("Digite o valor do cheque especial:")
+        leia(cheque)
+
+        se saldo + cheque >= valor entao
+            escreval("Transacao via cheque especial")
+        senao
+            escreval("Saldo insuficiente")
+        fimse
+    fimse
+
+fimalgoritmo

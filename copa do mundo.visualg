@@ -1,0 +1,18 @@
+algoritmo "Copa do mundo"
+
+var
+    falta:real
+    valor:real
+
+inicio
+    escreval("Digite o valor")
+    leia(valor)
+
+    se valor >= 25000 entao
+    escreval ("PARTIU COPA")
+
+    senao falta <- 25000 - valor
+    escreval ("Faltam: ", falta)
+    fimse
+
+fimalgoritmo

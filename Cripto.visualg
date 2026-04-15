@@ -1,0 +1,24 @@
+algoritmo "Criptomoeda"
+
+var
+    nome: caractere
+    variacao: real
+
+inicio
+    escreval("Digite o nome da criptomoeda:")
+    leia(nome)
+
+    escreval("Digite a variacao nas ultimas 24h:")
+    leia(variacao)
+
+    se variacao > 0 e variacao > 10 entao
+        escreval("Alta Relevante")
+    senao
+        se variacao < 0 e variacao < -10 entao
+            escreval("Correcao Forte")
+        senao
+            escreval("Estabilidade")
+        fimse
+    fimse
+
+fimalgoritmo
